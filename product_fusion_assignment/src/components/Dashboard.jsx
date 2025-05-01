@@ -309,7 +309,7 @@ const Dashboard = () => {
                   tick={{ fontSize: 12 }}
                 />
                 <YAxis
-                  tickFormatter={(value) => `$${value}`}
+                  tickFormatter={(value) => `₹${value}`}
                   tick={{ fontSize: 12 }}
                 />
                 <Tooltip 
@@ -401,12 +401,12 @@ const Dashboard = () => {
 
   // Helper function to get color based on category
   function getCategoryColor(category, index) {
-    const colors = ['#2563eb', '#dc2626', '#16a34a', '#9333ea', '#f59e0b'];
+    const colors = ['#5e81f4', '#ff6b6b', '#4cd1a0', '#b381f5', '#f59e0b'];
     const categoryColors = {
-      electronics: '#2563eb', // blue
-      clothing: '#dc2626',    // red
-      home: '#16a34a',        // green
-      beauty: '#9333ea'       // purple
+      electronics: '#5e81f4', 
+      clothing: '#ff6b6b',    
+      home: '#4cd1a0',        
+      beauty: '#b381f5'       
     };
     
     return categoryColors[category] || colors[index % colors.length];
